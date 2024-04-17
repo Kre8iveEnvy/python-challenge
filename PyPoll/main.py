@@ -46,6 +46,8 @@ print (f"Total Votes: {row_count}")
 print (f"------------------------------------")
 for k in range (0,canidate_count):
    print(f"{canidates[k]}: {percentage[k]: .3%} ({votes[k]:})")
+print (f"------------------------------------")
+print (f"Winner: {canidates[winner]}")
 
 output_file = ("/Users/savirahiman/Desktop/python_challenge/python-challenge/PyPoll/analysis/Election_Analysis_Summary.txt")
 
@@ -55,4 +57,7 @@ with open (output_file,"w") as file:
     file.write(f"Total Votes: {row_count}   ")
     for k in range (0,canidate_count):
      file.write(f"{canidates[k]}: {percentage[k]: .3%} ({votes[k]:})   ")
+     file.write(f"------------------------------------")
+     file.write(f"Winner: {canidates[winner]}")
+
 

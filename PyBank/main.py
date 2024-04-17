@@ -35,7 +35,7 @@ max_increase_month = profit_changes.index(max(profit_changes)) + 1
 max_decrease_month = profit_changes.index(min(profit_changes)) + 1
 
 #Print Statements
-output = (f"Finanial Analysis\n"
+output = (f"Financial Analysis\n"
           f"----------------------------------------------\n"
           f"Total Months: {len(total_months)}\n"
           f"Total: ${sum(total_profits)}\n"
@@ -51,7 +51,7 @@ output_file = ("/Users/savirahiman/Desktop/python_challenge/python-challenge/PyB
 
 with open(output_file,"w") as file:
 
-    file.write(f"Finanial Analysis")
+    file.write(f"Financial Analysis")
    
     file.write(f"----------------------------------------------")
   
