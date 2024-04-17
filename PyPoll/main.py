@@ -57,7 +57,7 @@ with open (output_file,"w") as file:
     file.write(f"Total Votes: {row_count}   ")
     for k in range (0,canidate_count):
      file.write(f"{canidates[k]}: {percentage[k]: .3%} ({votes[k]:})   ")
-     file.write(f"------------------------------------")
-     file.write(f"Winner: {canidates[winner]}")
+    file.write(f"------------------------------------")
+    file.write(f"Winner: {canidates[winner]}")
 
 
